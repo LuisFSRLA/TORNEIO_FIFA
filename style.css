@@ -1,0 +1,77 @@
+/* 
+$#b3151c: rgba(179,21,28,1);
+$#f0eeec: rgba(240,238,236,1);
+$#192e34: rgba(25,46,52,1);
+$#ca7475: rgba(202,116,117,1);
+$#626c70: rgba(98,108,112,1);
+$#edbec0: rgba(237,190,192,1);
+$#a2aaae: rgba(162,170,174,1); 
+*/
+@font-face {
+    font-family: "IBM Plex Serif";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/font/IBMPlexSerif-Regular.ttf") format("woff2"),
+         url("/font/IBMPlexSerif-Regular.woff") format("woff");
+}
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "IBM Plex Serif", serif;
+    color: rgba(25,46,52,1);
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.containerperguntas
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 200px;
+     & .nome,.gmail,.idade{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 125px;
+        width: 15%;
+        padding: 1%;
+        border: 2px solid rgba(98,108,112,1);
+        border-radius: 10px;
+        & label{
+            font-size: 30px;
+        }
+        & input{
+            font-size: 20px;
+        }
+    }
+}
+.botao{
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 500px;
+    & button{
+        height: 50px;
+        width: 150px;
+        font-size: 20px ;
+    }
+}
+h1{
+    font-size: 35px;
+}
+.etec{
+    color: #b3151c;
+}
+.fifa{
+    color: lightskyblue;
+}

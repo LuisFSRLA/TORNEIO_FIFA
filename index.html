@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Torneio Etec Fifa</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <br>
+        <h1>CADASTRO PARA O TORNEIO DA <a class="etec" href="https://www.etecpinhal.com.br/">ETEC</a> DE <span class="fifa">FIFA</span></h1>
+        <br>
+        <div class="containerperguntas">
+            <div class="nome">
+                <label for="PerguntaNome">Nome</label>
+                <input type="text" id="Nome" name="Nome" placeholder="Digite seu nome">
+            </div>
+            <div class="gmail">
+                <label for="PerguntaGmail">Gmail</label>
+                <input type="text" id="Gmail" name="Gmail" placeholder="Digite seu gmail">
+            </div>
+            <div class="idade">
+                <label for="PerguntaIdade">Idade</label>
+                <input type="number" id="Idade" name="Idade" placeholder="Digite sua idade">
+            </div>
+        </div>
+        <div class="botao">
+            <button onclick="Enviar()">Enviar</button>
+            <button onclick="limparDados()">Limpar dados</button>
+        </div>
+        <h2>Inscrições</h2>
+        <div id="lista-inscricoes"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
